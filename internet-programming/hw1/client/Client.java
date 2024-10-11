@@ -16,7 +16,7 @@ public class Client {
                 System.out.println("Enter request (ADD, VIEW, AVERAGE) or 'EXIT' to quit:");
                 request = inputBuff.readLine();
 
-                if (request.equalsIgnoreCase("EXIT")) {
+                if ("EXIT".equalsIgnoreCase(request)) {
                     out.println("DISCONNECT"); 
                     break;
                 }
@@ -29,6 +29,8 @@ public class Client {
                     out.println("VIEW");
                 } else if (request.equalsIgnoreCase("AVERAGE")) {
                     out.println("AVERAGE");
+                } else {
+                    System.out.println("Invalid request. Please enter 'ADD', 'VIEW', 'AVERAGE', or 'EXIT'.");
                 }
 
                 String response;

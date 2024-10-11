@@ -17,11 +17,11 @@ public class Server {
                 try {
                     while (isRunning) {
                         String command = consoleReader.readLine();
-                        if (command.equalsIgnoreCase("EXIT")) {
+                        if ("EXIT".equalsIgnoreCase(command)) {
                             isRunning = false;
                             System.out.println("Shutting down server...");
                             serverSocket.close(); 
-                            pool.shutdownNow(); 
+                            pool.shutdown(); 
                             break;
                         }
                     }
