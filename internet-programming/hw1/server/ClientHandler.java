@@ -1,4 +1,4 @@
-package server;
+package hw1.server;
 import java.io.*;
 import java.net.*;
 

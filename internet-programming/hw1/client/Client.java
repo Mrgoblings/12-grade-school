@@ -1,4 +1,4 @@
-package client;
+package hw1.client;
 import java.io.*;
 import java.net.*;
 
