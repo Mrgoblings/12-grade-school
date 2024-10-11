@@ -52,6 +52,7 @@ public class Server {
             }
 
             try {
+                shutdownThread.interrupt();
                 pool.awaitTermination(2, TimeUnit.SECONDS);
                 System.out.println("Server shutdown complete.");
             } catch (InterruptedException e) {
@@ -61,6 +62,8 @@ public class Server {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        
     }
 
 }
