@@ -53,7 +53,13 @@ public class ClientHandler implements Runnable {
     }
 
     private synchronized void viewAllStudents(PrintWriter out) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
+        File file = new File(FILE_NAME);
+        if (!file.exists()) {
+            out.println("No student data available.");
+            return;
+        }
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 out.println(line);
@@ -65,7 +71,13 @@ public class ClientHandler implements Runnable {
     }
 
     private synchronized void calculateAverage(PrintWriter out) {
-        try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
+        File file = new File(FILE_NAME);
+        if (!file.exists()) {
+            out.println("No student data available.");
+            return;
+        }
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             int totalGrades = 0;
             int gradeCount = 0;
