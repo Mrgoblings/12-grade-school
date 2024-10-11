@@ -6,22 +6,22 @@ public class Client {
         try (Socket socket = new Socket("localhost", 31337);
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-             BufferedReader console = new BufferedReader(new InputStreamReader(System.in))) {
+             BufferedReader inputBuff = new BufferedReader(new InputStreamReader(System.in))) {
 
             System.out.println("Connected to server");
 
             String request;
             while (true) {
-                System.out.println("Enter request (ADD, VIEW, AVERAGE) or 'exit' to quit:");
-                request = console.readLine();
+                System.out.println("Enter request (ADD, VIEW, AVERAGE) or 'EXIT' to quit:");
+                request = inputBuff.readLine();
 
-                if (request.equalsIgnoreCase("exit")) {
+                if (request.equalsIgnoreCase("EXIT")) {
                     break;
                 }
 
-                if (request.startsWith("ADD")) {
-                    System.out.println("Enter student data in format: name,grade1,grade2,...");
-                    String studentData = console.readLine();
+                if (request.equalsIgnoreCase("ADD")) {
+                    System.out.println("Enter student data in the format 'name,grade1,grade2,...'");
+                    String studentData = inputBuff.readLine();
                     out.println("ADD " + studentData);
                 } else if (request.equalsIgnoreCase("VIEW")) {
                     out.println("VIEW");

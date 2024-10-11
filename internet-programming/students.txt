@@ -1,4 +1,3 @@
-Ivan,5,6,4
-Maria,6,6,5
-Peter,4,5,6
-emil, 3, 4, 5, 6
+ivan,5,6,4
+maria,6,3,5
+pesho,4,5,6
