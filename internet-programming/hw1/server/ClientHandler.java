@@ -1,6 +1,14 @@
 package hw1.server;
-import java.io.*;
-import java.net.*;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.Socket;
 
 public class ClientHandler implements Runnable {
     private static final String FILE_NAME = "students.txt";

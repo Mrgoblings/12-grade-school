@@ -1,7 +1,13 @@
 package hw1.server;
-import java.io.*;
-import java.net.*;
-import java.util.concurrent.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public class Server {
     private static volatile boolean isRunning = true; 
