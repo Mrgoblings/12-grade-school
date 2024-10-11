@@ -1,3 +1,4 @@
+package client;
 import java.io.*;
 import java.net.*;
 
@@ -16,6 +17,7 @@ public class Client {
                 request = inputBuff.readLine();
 
                 if (request.equalsIgnoreCase("EXIT")) {
+                    out.println("DISCONNECT"); 
                     break;
                 }
 
@@ -31,6 +33,10 @@ public class Client {
 
                 String response;
                 while ((response = in.readLine()) != null && !response.equals("END")) {
+                    if (response.equalsIgnoreCase("DISCONNECT")) {
+                        System.out.println("Disconnected from the server.");
+                        return;
+                    }
                     System.out.println(response);
                 }
             }
