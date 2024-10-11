@@ -1,29 +1,22 @@
 ## How to Run the Server and Client
 
-### Prerequisites
-- Ensure you have Java installed on your system.
-
 ### Running the Server
 1. Open a new terminal window.
-2. Navigate to the `server` directory:
-    ```sh
-    cd server
-    ```
+2. Compile with javac(necessary because code is split into multiple files)
+```sh
+javac server/*.java
+```
 3. Run the server:
-    ```sh
-    java Server.java
-    ```
+```sh
+java server/Server.java
+```
 
 ### Running the Client
 1. Open a new terminal window.
-2. Navigate to the `client` directory:
-    ```sh
-    cd client
-    ```
-3. Run the client:
-    ```sh
-    java Client.java
-    ```
+2. Run the client:
+```sh
+java client/Client.java
+```
 
 ### Notes
 - The server reads and writes data to the `server/students.txt` file.
