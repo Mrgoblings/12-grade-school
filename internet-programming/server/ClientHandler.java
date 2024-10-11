@@ -3,7 +3,7 @@ import java.io.*;
 import java.net.*;
 
 public class ClientHandler implements Runnable {
-    private static final String FILE_NAME = "../students.txt";
+    private static final String FILE_NAME = "students.txt";
     private Socket clientSocket;
 
     
@@ -27,6 +27,7 @@ public class ClientHandler implements Runnable {
                     calculateAverage(out);
                 } else if (request.equalsIgnoreCase("DISCONNECT")) {
                     out.println("DISCONNECT");
+                    System.out.println("Client disconnected.");
                     break;
                 }
             }
