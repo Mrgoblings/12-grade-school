@@ -6,11 +6,8 @@ cd internet-programming/hw1
 
 ### Running the Server
 1. Open a new terminal window.
-2. Compile with javac (necessary because code is split into multiple files)
-```sh
-javac server/*.java
 ```
-3. Run the server:
+2. Run the server:
 ```sh
 java server/Server.java
 ```
