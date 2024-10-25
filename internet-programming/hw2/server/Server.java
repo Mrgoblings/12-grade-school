@@ -1,6 +1,7 @@
 package hw2.server;
 
 import java.io.IOException;
+import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousChannelGroup;
 import java.nio.channels.AsynchronousServerSocketChannel;
@@ -23,7 +24,7 @@ public class Server {
 
         AsynchronousChannelGroup channelGroup = AsynchronousChannelGroup.withThreadPool(threadPool);
 
-        AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open(channelGroup).bind(null, PORT);
+        AsynchronousServerSocketChannel server = AsynchronousServerSocketChannel.open(channelGroup).bind(new InetSocketAddress(PORT));
         System.out.println("Server started on port " + PORT);
 
         server.accept(null, new CompletionHandler<AsynchronousSocketChannel, Void>() {
@@ -92,5 +93,3 @@ public class Server {
 
     }
 }
-
-

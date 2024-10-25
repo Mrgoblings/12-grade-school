@@ -14,10 +14,10 @@ public class Client {
 
     private static final String SERVER_ADDRESS = "localhost";
     private static final int PORT = 31337;
-    private static final int BUFFER_SIZE = 1024;
+    // private static final int BUFFER_SIZE = 1024;
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        Path filePath = Paths.get("file_to_send.txt");
+        Path filePath = Paths.get("file.txt");
         if (!Files.exists(filePath)) {
             System.out.println("File does not exist: " + filePath);
             return;
@@ -25,6 +25,9 @@ public class Client {
 
         AsynchronousSocketChannel clientChannel = AsynchronousSocketChannel.open();
         Future<Void> future = clientChannel.connect(new java.net.InetSocketAddress(SERVER_ADDRESS, PORT));
+
+        // Wait for the connection to be established
+        
 
         try {
             future.get();
