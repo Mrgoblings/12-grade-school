@@ -1,5 +1,5 @@
 ## How to Run the Server and Client
-0. Go to the `hw1` folder
+0. Go to the `hw2` folder
 ```sh
 cd internet-programming/hw1
 ```
@@ -23,6 +23,6 @@ java client/Client.java
 ```
 
 ### Notes
-- The server reads and writes data to the `server/students.txt` file.
+- The server sends the `server/file.txt` file.
 - Ensure the server is running before starting the client.
 - Follow the instructions written to the console output.
