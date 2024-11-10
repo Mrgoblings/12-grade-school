@@ -10,7 +10,5 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style>
-  body {
-  background-color: gray;
-  }
+
 </style>
