@@ -4,25 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Custom colors based on the page
-        primary: '#52314d',        // Dark purple for text, headings, and main accents
-        secondary: '#f0dfd6',      // Light beige background color
-        accent: '#e89b87',         // Coral-like accent color
-        'button-bg': '#52314d',    // Button background color matching primary
-        'button-text': '#f0dfd6',  // Button text color to contrast with button-bg
-        'sale-badge': '#e89b87',   // Badge color (e.g., for "20% off" tag)
-        'price-original': '#8b6b6b', // Original price color, slightly muted
+        'primary-foreground': '#ffffff',       
+        'primary-background': '#664164', 
+        'secondary-foreground': '#f0dfd6',       
+        'secondary-background': '#816c65',      
+        'secondary-accent': '#daa48a',        
       },
       fontFamily: {
-        sans: ['Helvetica', 'Arial', 'sans-serif'], // General sans-serif font
+        sans: ["Inter", 'Helvetica', 'Arial', 'sans-serif'], 
       },
       spacing: {
-        // Custom spacing that may be useful
         '18': '4.5rem',
         '22': '5.5rem',
       },
       fontSize: {
-        // Custom font sizes
         'xs': '0.75rem',
         'sm': '0.875rem',
         'base': '1rem',
