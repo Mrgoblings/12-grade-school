@@ -5,10 +5,11 @@ export default {
     extend: {
       colors: {
         'primary-foreground': '#ffffff',       
-        'primary-background': '#664164', 
+        'primary-background': '#664164',
+        'primary-accent': '#f0d8ca',
         'secondary-foreground': '#f0dfd6',       
         'secondary-background': '#816c65',      
-        'secondary-accent': '#daa48a',        
+        'secondary-accent': '#daa48a',         
       },
       fontFamily: {
         sans: ["Inter", 'Helvetica', 'Arial', 'sans-serif'], 

@@ -1,17 +1,41 @@
 <script setup lang="ts">
-    import HeaderTop from './HeaderTop.vue'
+    import MovingBar from './MovingBar.vue'
     import HeaderContainer from './HeaderContainer.vue'
     import HeaderBottom from './HeaderBottom.vue'
+
+    import { ref, onMounted, onUnmounted } from 'vue';
+
+    const isScrolled = ref(false);
+
+    const handleScroll = () => {
+        isScrolled.value = window.scrollY > 0;
+    };
+
+    onMounted(() => {
+        window.addEventListener('scroll', handleScroll);
+    });
+
+    onUnmounted(() => {
+        window.removeEventListener('scroll', handleScroll);
+    });
 </script>
 
 <template>
-    <header>
-        <HeaderTop />
+    <header class="fixed w-full">
+        <!-- <HeaderTop> -->
+        <MovingBar additionalClasses="bg-primary-background text-primary-foreground text-base">
+            Пакетите за Black Friday са тук 🤍 Пазарувай с до 30% отстъпка
+        </MovingBar>
+
         <HeaderContainer />
-        <HeaderBottom />
+
+        <HeaderBottom :active="isScrolled" />
+
     </header>
 </template>
 
 <style>
-
+header.scrolled {
+    height: 1.6rem;
+}
 </style>
