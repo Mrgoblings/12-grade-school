@@ -1,12 +1,12 @@
 <script setup>
-import { defineProps, defineEmits } from 'vue';
+  import { defineProps, defineEmits } from 'vue';
 
-const props = defineProps({
-  additionalClasses: {
-    type: String,
-    default: ''
-  }
-});
+  const props = defineProps({
+    additionalClasses: {
+      type: String,
+      default: ''
+    }
+  });
 </script>
 
 <template>

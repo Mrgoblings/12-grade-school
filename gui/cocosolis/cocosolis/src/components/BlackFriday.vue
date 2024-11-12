@@ -11,10 +11,12 @@
     </section>
 
     <p class="bg-primary-background text-primary-foreground text-sm font-light flex justify-center w-full px-5">
-        * Промоцията е валидна до изчерпване на количествата.
-        <a href="#" class="text-underline">
-            Запознай се с пълните условия.
-        </a>
+        <span>
+            * Промоцията е валидна до изчерпване на количествата.
+            <a href="#" class="text-underline">
+                Запознай се с пълните условия.
+            </a>
+        </span>
     </p>
 </template>
 

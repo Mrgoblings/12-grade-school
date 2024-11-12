@@ -1,6 +1,5 @@
 <script>
-
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
 
 <template>
@@ -27,7 +26,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
                 <div id="circle-notification" class="bg-secondary-accent w-5 h-5 rounded-xl text-primary-foreground">0</div>
             </li>
             <li class="text-xl">
-                <a href="#" class="hover:text-secondary-accent">
+                <a href="#" class="hover:text-secondary-accent text-nowrap">
                     <font-awesome-icon :icon="['fas', 'user']" />
                     Влез в профил
                 </a>   

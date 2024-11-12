@@ -13,15 +13,17 @@
 
     onMounted(() => {
         window.addEventListener('scroll', handleScroll);
+        console.log('Header mounted');
     });
 
     onUnmounted(() => {
         window.removeEventListener('scroll', handleScroll);
+        console.log('Header UNmounted');
     });
 </script>
 
 <template>
-    <header class="fixed w-full">
+    <header class="fixed w-full z-50">
         <!-- <HeaderTop> -->
         <MovingBar additionalClasses="bg-primary-background text-primary-foreground text-base">
             Пакетите за Black Friday са тук 🤍 Пазарувай с до 30% отстъпка

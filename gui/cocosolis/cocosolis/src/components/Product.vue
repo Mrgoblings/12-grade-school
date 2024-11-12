@@ -1,3 +1,38 @@
+<script setup>
+    import { defineProps } from 'vue';
+
+    const props = defineProps({
+        image: {
+            type: String,
+            default: ''
+        },
+        discount: {
+            type: String,
+            default: ''
+        },
+        title: {
+            type: String,
+            default: ''
+        },
+        description: {
+            type: String,
+            default: ''
+        },
+        newPrice: {
+            type: String,
+            default: ''
+        },
+        oldPrice: {
+            type: String,
+            default: ''
+        },
+        infoText: {
+            type: String,
+            default: ''
+        }
+    });
+</script>
+
 <template>
     <div class="relative w-64 p-4 bg-gray-100 rounded-lg shadow-lg text-center">
         <!-- Discount Badge -->
@@ -29,29 +64,13 @@
         <button class="w-full py-2 bg-gray-700 text-white rounded hover:bg-gray-800">
             Добави
         </button>
-    </div>
+    </div>  
 </template>
-
-<script>
-export default {
-    name: "ProductCard",
-    props: {
-        image: String,
-        discount: String,
-        title: String,
-        description: String,
-        newPrice: String,
-        oldPrice: String,
-        infoText: String
-    },
-};
-</script>
 
 <!-- Tailwind CSS Custom Style -->
 <style scoped>
-@layer utilities {
-    .bg-brown-600 {
-        background-color: #6f4e37;
-    }
+.bg-brown-600 {
+    background-color: #6f4e37;
 }
+
 </style>

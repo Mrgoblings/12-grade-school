@@ -9,7 +9,8 @@ export default {
         'primary-accent': '#f0d8ca',
         'secondary-foreground': '#f0dfd6',       
         'secondary-background': '#816c65',      
-        'secondary-accent': '#daa48a',         
+        'secondary-accent': '#daa48a',
+        'trinary-foreground': "#fbf1eb",         
       },
       fontFamily: {
         sans: ["Inter", 'Helvetica', 'Arial', 'sans-serif'], 
