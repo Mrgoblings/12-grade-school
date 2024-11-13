@@ -55,21 +55,23 @@
     ></div>
 
     <!-- Bottom Section with Newsletter Signup -->
-    <div class="w-full bg-[#a58d82] p-8 mt-6 text-white text-center">
-      <p class="mb-4">
+    <div
+      class="w-full bg-secondary-background p-8 text-primary-foreground leading-3"
+    >
+      <p>
         Нека бъдем приятели! Абонирайте се, за да бъдете сред първите, които ще
         научат за нашите нови продукти и промоции:
       </p>
       <input
         type="email"
-        placeholder="твоята имейл адрес"
+        placeholder="твоят имейл адрес"
         v-model="email"
         class="w-full p-2 mt-2 rounded border-none text-black"
       />
-      <p class="text-[#dcc9be] text-sm mt-2">
+      <p class="text-quaternary-foreground text-xs mt-2">
         Моля, поставете отметка в квадратчето по-долу, за да се присъедините.
       </p>
-      <label class="text-[#dcc9be] text-sm block mt-2">
+      <label class="text-quaternary-foreground text-xs block mt-2">
         <input type="checkbox" v-model="consent" class="mr-2" />
         Съгласен/а съм предоставеният от мен имейл да бъде използван, за да
         получавам известия за новости, подаръци и бъдещи промоции, свързани с
@@ -80,7 +82,7 @@
       <button
         :disabled="!consent || !email"
         @click="joinClub"
-        class="mt-4 px-6 py-2 rounded font-semibold bg-[#dcc9be] text-[#5c4b44] hover:bg-[#cbb5a5] disabled:bg-[#8c6956] disabled:cursor-not-allowed"
+        class="mt-4 px-6 py-2 w-full font-base text-sm bg-secondary-accent text-primary-foreground disabled:cursor-not-allowed disabled:opacity-50"
       >
         ВЛЕЗ В КЛУБА
       </button>
@@ -107,6 +109,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Additional styling can go here if needed */
-</style>
+<style scoped></style>

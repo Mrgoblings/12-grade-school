@@ -2,10 +2,8 @@
 import Header from "./components/Header.vue";
 import BlackFriday from "./components/BlackFriday.vue";
 import ProductSection from "./components/ProductSection.vue";
-import HomeBenefits from "./components/HomeBenefits.vue";
 import Newsletter from "./components/Newsletter.vue";
 import Footer from "./components/Footer.vue";
-import Product from "./components/Product.vue";
 </script>
 
 <template>
@@ -82,7 +80,6 @@ import Product from "./components/Product.vue";
     description="Натурални, био слънцезащитни лосиони"
     type="dark"
   />
-  <HomeBenefits />
   <Newsletter />
   <Footer />
 </template>

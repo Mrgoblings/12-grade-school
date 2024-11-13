@@ -13,6 +13,7 @@ export default {
         'trinary-foreground': "#fbf1eb",
         'trinary-background': "#debaa7",
         'trinary-accent': "#f2d3c1",
+        'quaternary-foreground': "#dac7bc",
       },
       fontFamily: {
         sans: ["Inter", 'Helvetica', 'Arial', 'sans-serif'],
