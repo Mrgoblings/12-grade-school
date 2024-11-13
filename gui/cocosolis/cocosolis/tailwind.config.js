@@ -4,16 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-foreground': '#ffffff',       
+        'primary-foreground': '#ffffff',
         'primary-background': '#664164',
         'primary-accent': '#f0d8ca',
-        'secondary-foreground': '#f0dfd6',       
-        'secondary-background': '#816c65',      
+        'secondary-foreground': '#f0dfd6',
+        'secondary-background': '#816c65',
         'secondary-accent': '#daa48a',
-        'trinary-foreground': "#fbf1eb",         
+        'trinary-foreground': "#fbf1eb",
+        'trinary-background': "#debaa7",
       },
       fontFamily: {
-        sans: ["Inter", 'Helvetica', 'Arial', 'sans-serif'], 
+        sans: ["Inter", 'Helvetica', 'Arial', 'sans-serif'],
       },
       spacing: {
         '18': '4.5rem',

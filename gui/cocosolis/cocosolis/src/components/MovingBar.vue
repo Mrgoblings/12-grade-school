@@ -1,23 +1,23 @@
 <script setup>
-  import { defineProps, defineEmits } from 'vue';
+import { defineProps, defineEmits } from "vue";
 
-  const props = defineProps({
-    additionalClasses: {
-      type: String,
-      default: ''
-    }
-  });
+const props = defineProps({
+  additionalClasses: {
+    type: String,
+    default: "",
+  },
+});
 </script>
 
 <template>
-    <div :class="['moving-bar', additionalClasses]">
-        <span class="moving-content">
-            <slot></slot>
-        </span>
-        <span class="moving-content">
-            <slot></slot>
-        </span>
-    </div>
+  <div :class="['moving-bar', additionalClasses]">
+    <span class="moving-content">
+      <slot></slot>
+    </span>
+    <span class="moving-content">
+      <slot></slot>
+    </span>
+  </div>
 </template>
 
 <style scoped>
