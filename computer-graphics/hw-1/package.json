@@ -1,0 +1,24 @@
+{
+  "name": "hw-1",
+  "version": "1.0.0",
+  "description": "wh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mrgoblings/12-grade-school.git"
+  },
+  "author": "Emil Momchev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mrgoblings/12-grade-school/issues"
+  },
+  "homepage": "https://github.com/Mrgoblings/12-grade-school#readme",
+  "dependencies": {
+    "chartjs-node-canvas": "^4.1.6",
+    "fs": "^0.0.1-security",
+    "jimp": "^0.16.1"
+  }
+}
