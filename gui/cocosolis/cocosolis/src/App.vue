@@ -17,6 +17,41 @@ import Product from "./components/Product.vue";
     description="Натурални продукти за силна, гъста и бляскава коса"
     type="light"
   />
+  <MovingBar>
+    <span class="flex flex-row bg-secondary-background space-x-6 py-3">
+      <div class="uppercase text-primary-foreground font-medium">
+        МЕДИИТЕ ГОВОРЯТ ЗА НАС
+      </div>
+      <div>
+        <img
+          src="https://cocosolis.com/bg/wp-content/uploads/cosmopolitan.svg"
+        />
+      </div>
+      <div>
+        <img src="https://cocosolis.com/bg/wp-content/uploads/vogue.svg" />
+      </div>
+      <div>
+        <img src="https://cocosolis.com/bg/wp-content/uploads/elle.svg" />
+      </div>
+      <div>
+        <img
+          src="https://cocosolis.com/bg/wp-content/uploads/marie-claire.svg"
+        />
+      </div>
+      <div>
+        <img src="https://cocosolis.com/bg/wp-content/uploads/instyle.svg" />
+      </div>
+      <div>
+        <img src="https://cocosolis.com/bg/wp-content/uploads/grazia.svg" />
+      </div>
+      <div>
+        <img src="https://cocosolis.com/bg/wp-content/uploads/forbes.svg" />
+      </div>
+      <div>
+        <img src="https://cocosolis.com/bg/wp-content/uploads/vanityfair.svg" />
+      </div>
+    </span>
+  </MovingBar>
   <ProductSection
     title="Кожа"
     description="Серията SKIN за перфектна кожа, без несъвършенства."

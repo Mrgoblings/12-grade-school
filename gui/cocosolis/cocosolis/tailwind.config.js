@@ -12,6 +12,7 @@ export default {
         'secondary-accent': '#daa48a',
         'trinary-foreground': "#fbf1eb",
         'trinary-background': "#debaa7",
+        'trinary-accent': "#f2d3c1",
       },
       fontFamily: {
         sans: ["Inter", 'Helvetica', 'Arial', 'sans-serif'],

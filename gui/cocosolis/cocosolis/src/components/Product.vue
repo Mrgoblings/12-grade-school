@@ -19,13 +19,20 @@ const props = defineProps({
     default: "",
   },
   nStars: {
-    type: Number,
+    type: [String, Number],
     default: 5,
-    validator: (value) => value >= 0 && value <= 5,
+    validator: (value) => {
+      const numberValue = parseInt(value, 10);
+      return !isNaN(numberValue) && numberValue >= 0 && numberValue <= 5;
+    },
   },
   nReviews: {
-    type: Number,
+    type: [String, Number],
     default: 0,
+    validator: (value) => {
+      const numberValue = parseInt(value, 10);
+      return !isNaN(numberValue) && numberValue >= 0;
+    },
   },
   description: {
     type: String,

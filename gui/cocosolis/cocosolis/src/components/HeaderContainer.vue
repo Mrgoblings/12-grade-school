@@ -12,7 +12,7 @@
       />
     </div>
 
-    <ul id="menu-cart" class="text-secondary-background">
+    <ul id="menu-cart" class="text-secondary-background items-center">
       <li><a href="#" class="hover:text-secondary-accent">Начало</a></li>
       <li><a href="#" class="hover:text-secondary-accent">Продукти</a></li>
       <li><a href="#" class="hover:text-secondary-accent">Club</a></li>
