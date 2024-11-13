@@ -14,14 +14,22 @@ const props = defineProps({
   },
   type: {
     type: String,
-    default: "",
+    default: "light",
     validator: (value) => ["light", "dark"].includes(value),
   },
 });
 </script>
 
 <template>
-  <section class="bg-trinary-foreground flex flex-col justify-center py-16">
+  <section
+    :class="[
+      type === 'dark' ? 'bg-trinary-foreground' : 'bg-primary-foreground',
+      'flex',
+      'flex-col',
+      'justify-center',
+      'py-16',
+    ]"
+  >
     <div class="flex flex-col justify-center text-center">
       <h1>{{ title }}</h1>
       <h2 v-if="description">{{ description }}</h2>
@@ -43,7 +51,10 @@ const props = defineProps({
       <Product
         image="https://cocosolis.com/wp-content/uploads/bf24__dream-hair.jpg"
         discount="-15%"
-        title="BRONZE TAN"
+        category="BRONZE TAN"
+        type=" Hair Growth Serum Spray"
+        nStars="4"
+        nReviews="1297"
         description="Естествено изглеждащ бронзов тен, когато пожелаете"
         newPrice="66,30"
         oldPrice="78,00"
