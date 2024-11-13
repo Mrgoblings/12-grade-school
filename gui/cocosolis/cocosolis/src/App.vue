@@ -16,7 +16,9 @@ import Footer from "./components/Footer.vue";
     type="light"
   />
   <MovingBar>
-    <span class="flex flex-row bg-secondary-background space-x-6 py-3">
+    <div
+      class="flex flex-row bg-secondary-background space-x-6 py-3 overflow-hidden text-nowrap"
+    >
       <div class="uppercase text-primary-foreground font-medium">
         МЕДИИТЕ ГОВОРЯТ ЗА НАС
       </div>
@@ -48,7 +50,7 @@ import Footer from "./components/Footer.vue";
       <div>
         <img src="https://cocosolis.com/bg/wp-content/uploads/vanityfair.svg" />
       </div>
-    </span>
+    </div>
   </MovingBar>
   <ProductSection
     title="Кожа"
