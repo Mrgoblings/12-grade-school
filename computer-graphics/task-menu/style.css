@@ -36,12 +36,14 @@ nav {
     margin: 0;
 }
 
-.menu li {
+.menu>li
+.mobile-menu>li {
     position: relative;
     margin: 0 10px;
 }
 
-.menu li a {
+.menu>li>a,
+.mobile-menu>li>a {
     text-decoration: none;
     color: var(--primary-color);
     padding: 8px 12px;
@@ -49,7 +51,8 @@ nav {
     transition: var(--transition);
 }
 
-.menu li a:hover {
+.menu>li>a:hover,
+.mobile-menu>li>a:hover {
     background-color: var(--hover-bg);
 }
 
@@ -72,7 +75,7 @@ nav {
 
 .submenu li a {
     display: block;
-    padding: 8px 16px;
+    padding: 30px 30px;
     text-decoration: none;
     color: var(--primary-color);
     transition: var(--transition);
@@ -87,8 +90,9 @@ nav {
     left: 100%;
 }
 
-.menu li:hover>.submenu,
-.submenu li:hover>.submenu {
+.menu>li:hover>.submenu,
+.mobile-menu>li:hover>.submenu,
+.submenu>li:hover>.submenu {
     display: block;
 }
 
@@ -96,12 +100,13 @@ nav {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    background-color: var(--primary-color);
 }
 
 .hamburger div {
     width: 25px;
     height: 3px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-bg);
     margin: 4px 0;
     transition: var(--transition);
 }
@@ -109,10 +114,13 @@ nav {
 .mobile-menu {
     display: none;
     flex-direction: column;
-}
-
-.mobile-menu.open {
-    display: flex;
+    top: 3rem;
+    background-color: var(--primary-bg);
+    border-top: 1px solid var(--hover-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    left: 0;
+    width: 150px;
+    height: 90%;
 }
 
 @media (max-width: 768px) {
@@ -123,24 +131,24 @@ nav {
     .hamburger {
         display: flex;
     }
-
+    
     .mobile-menu {
-        background-color: var(--primary-bg);
+        display: none;
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        border-top: 1px solid var(--hover-bg);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .mobile-menu.open {
+        display: flex;
     }
 
-    .mobile-menu li {
+    /* .mobile-menu li {
         border-bottom: 1px solid var(--hover-bg);
     }
 
     .mobile-menu li a {
         padding: 10px 20px;
-    }
+        text-decoration: none;
+        color: var(--primary-color);
+    } */
 }
 
 .theme-toggle {
