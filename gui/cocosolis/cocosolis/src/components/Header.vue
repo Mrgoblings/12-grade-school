@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MovingBar from "./MovingBar.vue";
 import HeaderContainer from "./HeaderContainer.vue";
-import HeaderBottom from "./HeaderBottom.vue";
+// import HeaderBottom from "./HeaderBottom.vue";
 
 import { ref, onMounted, onUnmounted } from "vue";
 
@@ -33,7 +33,7 @@ onUnmounted(() => {
 
     <HeaderContainer />
 
-    <HeaderBottom :active="isScrolled" />
+    <!-- <HeaderBottom :active="isScrolled" /> -->
   </header>
 </template>
 
